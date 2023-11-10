@@ -97,15 +97,11 @@ public class Autoa {
 	 */
 	public static void main(String[] args) {
 
-
-
 		Autoa autoa = new Autoa("Benz","Mercedes");
 		System.out.println(autoa.getModeloa());
 		System.out.println(autoa.getMarka());
 
-
 		String Modeloa2 = JOptionPane.showInputDialog("Sartu zure Autoaren Modeloa");
-
 
 		if (Modeloa2 == null || Modeloa2.isEmpty()) {
 
@@ -117,11 +113,8 @@ public class Autoa {
 
 			throw new IllegalArgumentException("Marka atalak ezin du hutsik joan");
 		}
-
-
 		//Autoa autoa2 = new Autoa(Modeloa2,Marka2);
 		JOptionPane.showMessageDialog(null, "Modeloa " + Modeloa2 + " Marka : " + Marka2);
-
 
 	}
 
