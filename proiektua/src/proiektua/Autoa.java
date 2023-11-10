@@ -98,19 +98,30 @@ public class Autoa {
 		System.out.println(autoa.getModeloa());
 		System.out.println(autoa.getMarka());
 
+
 		String Modeloa2 = JOptionPane.showInputDialog("Sartu zure Autoaren Modeloa");
 
-		if (Modeloa2 == null || Modeloa2.isEmpty()) {
+		try {
+			if (Modeloa2 == null || Modeloa2.isEmpty()) {
 
-			throw new IllegalArgumentException("Modelo atalak ezin du hutsik joan");
+				throw new IllegalArgumentException("Modelo atalak ezin du hutsik joan");
+			}
+		} catch (IllegalArgumentException e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+			return;
 		}
 
 		String Marka2 = JOptionPane.showInputDialog("Sartu zure Autoaren Marka");
-		if (Marka2 == null || Marka2.isEmpty()) {
+		try {
+			if (Marka2 == null || Marka2.isEmpty()) {
 
-			throw new IllegalArgumentException("Marka atalak ezin du hutsik joan");
+				throw new IllegalArgumentException("Marka atalak ezin du hutsik joan");
+			}
+		} catch (IllegalArgumentException e) {
+			JOptionPane.showMessageDialog(null, e.getMessage());
+			return;
 		}
-		
+
 		//Autoa autoa2 = new Autoa(Modeloa2,Marka2);
 		JOptionPane.showMessageDialog(null, "Modeloa " + Modeloa2 + " Marka : " + Marka2);
 
