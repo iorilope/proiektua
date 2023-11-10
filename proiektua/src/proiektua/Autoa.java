@@ -41,7 +41,6 @@ public class Autoa {
 		Marka = b;
 	}
 
-
 	/**
 	 * Sets the modeloa.
 	 *
@@ -70,7 +69,6 @@ public class Autoa {
 		Marka = d;
 	}
 
-
 	/**
 	 * Gets the modeloa.
 	 *
@@ -79,7 +77,6 @@ public class Autoa {
 	public String getModeloa () {
 		return Modeloa;
 	}
-
 
 	/**
 	 * Gets the marka.
@@ -113,6 +110,7 @@ public class Autoa {
 
 			throw new IllegalArgumentException("Marka atalak ezin du hutsik joan");
 		}
+		
 		//Autoa autoa2 = new Autoa(Modeloa2,Marka2);
 		JOptionPane.showMessageDialog(null, "Modeloa " + Modeloa2 + " Marka : " + Marka2);
 
