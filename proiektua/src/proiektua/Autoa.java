@@ -1,5 +1,5 @@
 /*
- * 2023(e)ko aza. 10(a)
+ * 2023(e)ko aza. 13(a)
  * Ioritz Lopetegi
  */
 package proiektua;
