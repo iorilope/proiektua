@@ -111,6 +111,9 @@ public class Autoa {
 			if (Marka2 == null || Marka2.isEmpty()) {
 				throw new IllegalArgumentException("Marka atalak ezin du hutsik joan");
 			}
+			if (Marka2.matches(".*\\d.*")) {
+				throw new IllegalArgumentException("Marka atalak ezin du zenbakirik izan");
+			}
 		} catch (IllegalArgumentException e) {
 			JOptionPane.showMessageDialog(null, e.getMessage());
 			return;
