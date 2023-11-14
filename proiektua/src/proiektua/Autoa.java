@@ -124,7 +124,6 @@ public class Autoa {
 
 		//Autoa autoa2 = new Autoa(Modeloa2,Marka2);
 		JOptionPane.showMessageDialog(null, "Modeloa " + Modeloa2 + " Marka : " + Marka2);
-
 	}
 
 }
