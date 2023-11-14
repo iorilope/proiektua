@@ -97,6 +97,8 @@ public class Autoa {
 
 		String Modeloa2 = JOptionPane.showInputDialog("Sartu zure Autoaren Modeloa");
 
+		
+		//Konprobatu modelo atala eta marka atala hutsak dauden
 		try {
 			if (Modeloa2 == null || Modeloa2.isEmpty()) {
 				throw new IllegalArgumentException("Modelo atalak ezin du hutsik joan");
