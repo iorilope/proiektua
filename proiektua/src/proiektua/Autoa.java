@@ -48,13 +48,10 @@ public class Autoa {
 	 */
 	public void setModeloa ( String c) {
 		if (Modeloa == null || Modeloa.isEmpty()) {
-
 			throw new IllegalArgumentException("Modelo atalak ezin du hutsik joan");
 		}
-
 		Modeloa = c;
 	}
-
 
 	/**
 	 * Sets the marka.
@@ -98,12 +95,10 @@ public class Autoa {
 		System.out.println(autoa.getModeloa());
 		System.out.println(autoa.getMarka());
 
-
 		String Modeloa2 = JOptionPane.showInputDialog("Sartu zure Autoaren Modeloa");
 
 		try {
 			if (Modeloa2 == null || Modeloa2.isEmpty()) {
-
 				throw new IllegalArgumentException("Modelo atalak ezin du hutsik joan");
 			}
 		} catch (IllegalArgumentException e) {
@@ -114,7 +109,6 @@ public class Autoa {
 		String Marka2 = JOptionPane.showInputDialog("Sartu zure Autoaren Marka");
 		try {
 			if (Marka2 == null || Marka2.isEmpty()) {
-
 				throw new IllegalArgumentException("Marka atalak ezin du hutsik joan");
 			}
 		} catch (IllegalArgumentException e) {
