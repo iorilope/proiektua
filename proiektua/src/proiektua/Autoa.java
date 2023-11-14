@@ -15,7 +15,6 @@ import javax.swing.JOptionPane;
  */
 public class Autoa {
 
-
 	/** The Modeloa. */
 	private String Modeloa;
 
@@ -60,7 +59,6 @@ public class Autoa {
 	 */
 	public void setMarka (String d) {
 		if (Marka == null || Marka.isEmpty()) {
-
 			throw new IllegalArgumentException("Marka atalak ezin du hutsik joan");
 		}
 		Marka = d;
